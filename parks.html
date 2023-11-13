@@ -4,29 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>parks</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
   </head>
   <body>
     <header></header>
     <main>
-        <p>States/Territories</p>
-        <label for=""></label>
-        <select id="statesDrop">
-            <option value="">State</option>
-        </select>
-        <table id="parkTableData">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>city</th>
-                    <th>State</th>
-                    <th>Zip</th>
-                    <th>Phone</th>
-                </tr>
-            </thead>
-            <tbody id="parkTableDataBody"></tbody>
-        </table>
+      <div>
+        <input type="radio" name="filter" id="locationRadio" />
+        <label for="byLocation">location</label>
+
+        <input type="radio" name="filter" id="typeRadio" />
+        <label for="byType">type</label>
+
+        <input type="radio" name="filter" id="allRadio" />
+        <label for="all">All</label>
+      </div>
+      <p>States/Territories</p>
+      <label for=""></label>
+      <select id="locationDrop">
+        <option value="select">Select...</option>
+      </select>
+      <table id="parkTableData">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>city</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody id="parkTableDataBody"></tbody>
+      </table>
     </main>
     <footer></footer>
     <script src="scripts/locationData.js"></script>
