@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>parks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css">
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+        <p>States/Territories</p>
+        <label for=""></label>
+        <select id="parksDrop">
+            <option value="">Select</option>
+        </select>
+        <table id="parkTableData">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>city</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="parkTableDataBody"></tbody>
+        </table>
+    </main>
     <footer></footer>
     <script src="scripts/locationData.js"></script>
     <script src="scripts/parkTypeData.js"></script>
