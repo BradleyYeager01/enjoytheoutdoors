@@ -38,7 +38,7 @@ function loadParksByType() {
 function loadParksTable() {
   parkTableDataBody.innerHTML = "";
   for (const park of nationalParksArray) {
-    let row = parkTableDataBody.insertRow(-1);
+  let row = parkTableDataBody.insertRow(-1);
   let cell1 = row.insertCell(0);
   cell1.innerText = park.LocationName;
   let cell2 = row.insertCell(1);

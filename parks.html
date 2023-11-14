@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>parks</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" /> 
   </head>
   <body>
-    <header></header>
+    <header>
+        <div>
+            <nav>
+              <a href="index.html">home</a>
+              <a href="mountains.html">mountains</a>
+            </nav>
+          </div>
+    </header>
     <main>
       <div>
         <input type="radio" name="filter" id="locationRadio" />
-        <label for="byLocation">location</label>
+        <label for="byLocation">Location</label>
 
         <input type="radio" name="filter" id="typeRadio" />
-        <label for="byType">type</label>
+        <label for="byType">Type</label>
 
         <input type="radio" name="filter" id="allRadio" />
         <label for="all">All</label>
       </div>
+      <br>
       <p>States/Territories</p>
       <label for=""></label>
       <select id="locationDrop">
@@ -29,7 +37,7 @@
           <tr>
             <th>Name</th>
             <th>Address</th>
-            <th>city</th>
+            <th>City</th>
             <th>State</th>
             <th>Zip</th>
             <th>Phone</th>
@@ -38,7 +46,9 @@
         <tbody id="parkTableDataBody"></tbody>
       </table>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="https://youtu.be/qqi-8nv5ngk?si=LzsiJ_WmGwkpA73Y" style="text-decoration: none; color: white;">on the radio</a>
+    </footer>
     <script src="scripts/locationData.js"></script>
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/nationalParkData.js"></script>
