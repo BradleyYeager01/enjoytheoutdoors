@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -15,9 +23,16 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <select id="mountainDrop">
+        <option value="select">Select...</option>
+      </select>
+      <div id="mountainImageDiv"></div>
+      <br />
+      <div id="infoParagraphDiv"></div>
+    </main>
     <footer></footer>
-    <script src="scripts/mountains.js"></script>
     <script src="scripts/mountainData.js"></script>
+    <script src="scripts/mountains.js"></script>
   </body>
 </html>

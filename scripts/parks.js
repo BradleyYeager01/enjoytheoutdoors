@@ -87,7 +87,7 @@ function appendParkToTable(park) {
     link.href = park.Visit;
     link.innerText = park.LocationName;
     let cell6 = row.insertCell(6);
-    cell6.appendChild(link);
+    cell6.appendChild(link);s
   }
 }
 
