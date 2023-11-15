@@ -1,5 +1,7 @@
 const mountainDrop = document.querySelector("#mountainDrop");
 const infoParagraph = document.querySelector("#infoParagraph");
+const effortLevelParagraph = document.querySelector("#effortLevelParagraph");
+
 
 function loadMountainDrop() {
   for (const mountain of mountainsArray) {
@@ -44,6 +46,19 @@ function addMountainInfo() {
         }
     }
 }
+function displayEffortLevel() {
+    for (const mountain of mountainsArray) {
+        const name = mountainDrop.value
+        if (mountain.name == name) {
+            let effort = document.createElement("p");
+
+            effort.innerText = mountain.effort;
+
+            effortLevelParagraph.appendChild(effort);
+        }
+    }
+}
+displayEffortLevel();
 mountainDrop.onclick = addMountainInfo;
 mountainDrop.onchange = addImage;
 loadMountainDrop();
