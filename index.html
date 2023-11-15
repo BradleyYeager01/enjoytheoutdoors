@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <style>
+      .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 3rem;
+      }
+
+      .text {
+        font-size: 70px;
+        padding-left: 3rem;
+      }
+      body{
+        background-color: #FAF9F6
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div>
-            <nav>
-              <a href="parks.html">Parks</a>
-              <a href="mountains.html">Mountains</a>
-            </nav>
-          </div>
+      <div>
+        <nav>
+          <a href="parks.html">Parks</a>
+          <a href="mountains.html">Mountains</a>
+        </nav>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
-</body>
+    <main>
+        <div class="container">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1558331289-8eb9eeee2afd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdvb2RzfGVufDB8fDB8fHww"
+          alt=""
+        />
+      </div>
+      <h1 class="text">Welcome to the Outdoors</h1>
+      </div>
+      <h3>a little about us and what we do</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, ad laudantium nam aliquam ex enim excepturi
+        ratione dolor omnis deleniti, molestias quae assumenda. Animi blanditiis ipsam ab obcaecati assumenda at
+        sapiente libero quas debitis beatae, temporibus laboriosam possimus voluptatibus quidem impedit aut, cupiditate
+        quos laudantium maxime ea rerum nemo. Commodi?
+      </p>
+      <h3>our passion is nature</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit veniam quae deserunt, nostrum esse sequi
+        unde! Consequatur hic recusandae quam optio nesciunt libero id voluptas doloribus, at soluta laboriosam!
+      </p>
+
+      <h3>every dollar you spend plants one tree</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque non cupiditate asperiores dolorem,
+        architecto commodi in atque, veritatis molestiae, dolore facere laborum ipsam? Minima quod quas earum saepe eius
+        omnis nesciunt obcaecati aut dolores ea eaque, eveniet et incidunt iste soluta fuga! Provident animi consectetur
+        odit explicabo repellendus, enim totam excepturi esse eveniet in a aspernatur, suscipit, commodi unde.
+      </p>
+    </main>
+    <footer>
+        <p>contact us</p>
+        <p>find more like us</p>
+        <p>legal</p>
+        <p>forms</p>
+    </footer>
+  </body>
 </html>

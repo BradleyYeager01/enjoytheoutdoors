@@ -6,11 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
     <style>
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+      body {
+        background-color: #faf9f6;
+      }
+      img{
+        padding: 3rem;
       }
     </style>
   </head>
@@ -25,12 +25,12 @@
     </header>
     <main>
       <select id="mountainDrop">
-        <option value="select">Pick Mountain</option>
+        <option value="select">Select Mountain</option>
       </select>
-      <div id="mountainImageDiv"></div>
-      <br />
-      <div id="infoParagraphDiv"></div>
-      <div id="effortLevelParagraph"></div>
+      <div class="container">
+        <div id="mountainImageDiv"></div>
+        <div id="infoParagraphDiv"></div>
+      </div>
     </main>
     <footer></footer>
     <script src="scripts/mountainData.js"></script>

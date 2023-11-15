@@ -40,25 +40,17 @@ function addMountainInfo() {
             infoParagraphDiv.innerHTML = "";
             let info = document.createElement("p");
 
-            info.innerText = mountain.desc;
+            info.innerText = `${mountain.desc}`;
 
-            infoParagraphDiv.appendChild(info);
-        }
-    }
-}
-function displayEffortLevel() {
-    for (const mountain of mountainsArray) {
-        const name = mountainDrop.value
-        if (mountain.name == name) {
             let effort = document.createElement("p");
 
-            effort.innerText = mountain.effort;
+            effort.innerText = `Effort: ${mountain.effort}`
 
-            effortLevelParagraph.appendChild(effort);
+            infoParagraphDiv.append(info, effort);
         }
     }
 }
-displayEffortLevel();
+
 mountainDrop.onclick = addMountainInfo;
 mountainDrop.onchange = addImage;
 loadMountainDrop();

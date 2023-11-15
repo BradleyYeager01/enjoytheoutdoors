@@ -100,4 +100,3 @@ allRadio.onclick = function () {
 }
 
 locationDrop.onchange = createLocationData;
-loadStateList();
