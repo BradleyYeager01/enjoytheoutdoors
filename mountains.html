@@ -4,40 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
     <style>
       body {
         background-color: #faf9f6;
       }
-      img{
-        padding-block: 1rem;
+      img {
+        object-fit: cover;
+        width: 335px;
+        height: 200px;
+        border-radius: .5rem;
       }
-      nav,a {
+      nav,
+      a {
         color: #1b2832;
       }
     </style>
   </head>
   <body>
     <header>
-      <div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="parks.html">Parks</a>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Outdoors</a></li>
+        </ul>
+        <ul>
+          <li><a href="mountains.html">Mountains</a></li>
+          <li><a href="parks.html">Parks</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <select id="mountainDrop">
         <option value="select">Select Mountain</option>
       </select>
-      <div >
+      <div style="display: flex; gap: 1.5rem; align-items: center">
         <div id="mountainImageDiv"></div>
         <div id="infoParagraphDiv"></div>
       </div>
     </main>
     <footer>
-      <a href="https://youtu.be/TtFwqnaPqXY?si=OuE5uDv6j66PFH0K" style="color: #faf9f6;">Rocky Mountain High</a>
-      <a href="https://youtu.be/-C_3eYj-pOM?si=hCY5-R2eUyW04aPp" style="color: #faf9f6;">Aint No Mountain High Enough</a>
+      <a href="https://youtu.be/TtFwqnaPqXY?si=OuE5uDv6j66PFH0K" style="color: #faf9f6">Rocky Mountain High</a>
+      <a href="https://youtu.be/-C_3eYj-pOM?si=hCY5-R2eUyW04aPp" style="color: #faf9f6">Aint No Mountain High Enough</a>
     </footer>
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>
