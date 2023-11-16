@@ -25,7 +25,7 @@ function addImage() {
       image.src = path;
 
       //set the alt attribute on the image to the imagefiles description
-      image.alt = mountain.desc;
+      image.alt = mountain.name;
 
       //add image to the div
       mountainImageDiv.appendChild(image);
