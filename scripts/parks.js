@@ -82,12 +82,12 @@ function appendParkToTable(park) {
   cell5.innerText = park.ZipCode;
   let cell6 = row.insertCell(5);
   cell6.innerText = park.Phone;
-  if (park.vist) {
+  if (park.vist != undefined) {
     var link = document.createElement("a");
     link.href = park.Visit;
     link.innerText = park.LocationName;
-    let cell6 = row.insertCell(6);
-    cell6.appendChild(link);s
+    let cell7 = row.insertCell(6);
+    cell7.appendChild(link);
   }
 }
 
